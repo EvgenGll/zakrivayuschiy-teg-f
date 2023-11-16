@@ -1,6 +1,32 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+
+:root.theme-light {
+    --bg-color: var(--white-color);
+    --text-color: var(--bg-accent-color);
+    --main-gradient-color: var(--white-color-1);
+    --other-gradient-color: var(--black-color);
+  }
+
+:root.theme-dark {
+    --bg-color: var(--bg-accent-color);
+    --text-color: var(--accent-color);
+    --font-weight: var(--accent-font-weight);
+    --background-gradient: var(--bg-accent-color);
+    --main-gradient-color: var(--green-color);
+    --other-gradient-color: var(--dark-green-color);
+    --text-button-color: var(--accent-color);
+    --sparks-color: var(--bg-color);
+    --contour-color: var(--accent-color);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: var(--bg-accent-color);
+        --text-color: var(--accent-color);
+        --font-weight: var(--accent-font-weight);
+        --main-gradient-color: var(--green-color);
+        --other-gradient-color: var(--dark-green-color);
+        --text-button-color: var(--accent-color);
+        --sparks-color: var(var(--bg-color));
+        --contour-color: var(--accent-color);
+  }
+}
