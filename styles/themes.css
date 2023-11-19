@@ -2,8 +2,12 @@
 :root.theme-light {
     --bg-color: var(--white-color);
     --text-color: var(--bg-accent-color);
+    --background-gradient: var(--white-color-1);
     --main-gradient-color: var(--white-color-1);
     --other-gradient-color: var(--black-color);
+    --text-button-color: var(--bg-color);
+    --contour-color: var(--bg-accent-color);
+    --sparks-color: var(--red-color);
   }
 
 :root.theme-dark {
@@ -14,7 +18,7 @@
     --main-gradient-color: var(--green-color);
     --other-gradient-color: var(--dark-green-color);
     --text-button-color: var(--accent-color);
-    --sparks-color: var(--bg-color);
+    --sparks-color: var(--accent-color);
     --contour-color: var(--accent-color);
   }
   
@@ -24,9 +28,10 @@
         --text-color: var(--accent-color);
         --font-weight: var(--accent-font-weight);
         --main-gradient-color: var(--green-color);
+        --background-gradient: var(--bg-accent-color);
         --other-gradient-color: var(--dark-green-color);
         --text-button-color: var(--accent-color);
-        --sparks-color: var(var(--bg-color));
+        --sparks-color: var(--accent-color);
         --contour-color: var(--accent-color);
   }
 }
