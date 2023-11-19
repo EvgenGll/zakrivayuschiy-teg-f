@@ -252,7 +252,7 @@
   padding: 15px 20px;
 }
 
-.button__text { 
+.button__text {
   mix-blend-mode: difference;
   color: var(--text-button-color);
 }
