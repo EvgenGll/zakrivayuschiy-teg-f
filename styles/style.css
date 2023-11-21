@@ -340,7 +340,7 @@
   filter: saturate(140%) hue-rotate(80deg) contrast(60%);
 }
 
-@media (width <= 375px) {
+@media (width < 413px) {
   .footer {
     padding-inline: 25px;
   }
